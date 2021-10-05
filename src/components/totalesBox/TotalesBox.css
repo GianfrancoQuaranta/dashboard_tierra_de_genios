@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#div-totalesBox {
+    width: 100%;
+    height: auto;
+    margin-top: 11px;
+    /*border: 1px solid red;*/
+    margin: 0px 20px 20px;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+#div-totalesBox h1 {
+    font-size: 21px;
+    color: #5a5c69;
+    font-family: "Noto", sans-serif;
+    margin-left: 12px;
+}
+

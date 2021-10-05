@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*#div-columnNameTable{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}*/
+
+#tr-columnNameTable{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f9f9fa;
+    align-items: center;
+}
+
+#tr-columnNameTable th{
+    width: 12.2625%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;
+    color: #5a5c69;
+    border:rgba(161, 161, 161, 0.75) 1px solid;
+    padding: 4px;
+}
+
+#id-width-columnNameTable{
+    width: 1.9% !important;
+}
+

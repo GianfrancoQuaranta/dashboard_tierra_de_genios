@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#div-footer {
+    width: 101vw ;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;    
+    margin: 20px 0 0 0;
+    padding: 15px;
+    border-top: 1px solid rgba(209, 209, 209, 0.75);
+    position: relative;
+    background-color: #fff;
+}
+
+#div-footer::after {
+    position: absolute;
+    top: 6px;
+    left: 0px;
+    content: " ";
+    background: linear-gradient(#d3d1d1, #d3d1d1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 100%;
+    height: 95%;
+    filter:blur(10px);
+    z-index: -1;
+}
+
+#div-footer img {
+    max-width: 5%;
+}
+
