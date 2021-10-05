@@ -45,7 +45,6 @@ function ProductsInDB() {
                 
             }) : <p>Cargando...</p> }
 
-                <Product name={'Ciudadano Ilustre'}/>
             </section>
         </div>
     )

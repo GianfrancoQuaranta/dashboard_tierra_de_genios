@@ -42,10 +42,10 @@ function Table() {
                 <tbody>
                     {/*usd == user detail*/}
                     {
-                        usersDetail === [] && <p>Cargando...</p>
+                        (usersDetail === [] && usersDetail !== undefined) && <p>Cargando...</p>
                     }
                     {
-                        usersDetail.map((usd, i) => {
+                        usersDetail?.map((usd, i) => {
 
                             return <TableRecords
                                 key={usd.id + i}
@@ -63,56 +63,6 @@ function Table() {
 
                     }
 
-
-                    {/*usersDetail.map((us, i) => {
-
-                        <TableRecords
-                        key={usd.user.id + i}
-                        id={usd.user.id}
-                        fullName={usd.user.firstName + ' ' + usd.user.lastName}
-                        email={usd.user.email}
-                        birthdate={usd.user.birthdate}
-                        adress={usd.user.adress}
-                        phoneNumber={usd.user.phoneNumber}
-                        country={usd.user.country}
-                        avatar={usd.image_perfil}
-                        mediosDePago={'PayPal'}
-                    />
-                    })*/}
-
-                    {/* <TableRecords
-                        id={1}
-                        fullName={'María Pía'}
-                        email={'mariapiamariapia@gmail.com'}
-                        birthdate={'18/06/1996'}
-                        adress={'la calle 1234fxtxycgvjhkbjnlkjbkhvjgchfcgjvh'}
-                        phoneNumber={5493513270775}
-                        country={'Argentina'}
-                        avatar={'http://localhost:3050/image/user/25'}
-                        mediosDePago={'PayPal'}
-                    />
-                    <TableRecords
-                        id={1}
-                        fullName={'María Pía'}
-                        email={'mariapiamariapia@gmail.com'}
-                        birthdate={'18/06/1996'}
-                        adress={'la calle 1234fxtxycgvjhkbjnlkjbkhvjgchfcgjvh'}
-                        phoneNumber={5493513270775}
-                        country={'Argentina'}
-                        avatar={'http://localhost:3050/image/user/25'}
-                        mediosDePago={'PayPal'}
-                    />
-                    <TableRecords
-                        id={1}
-                        fullName={'María Pía'}
-                        email={'mariapiamariapia@gmail.com'}
-                        birthdate={'18/06/1996'}
-                        adress={'la calle 1234fxtxycgvjhkbjnlkjbkhvjgchfcgjvh'}
-                        phoneNumber={5493513270775}
-                        country={'Argentina'}
-                        avatar={'http://localhost:3050/image/user/25'}
-                        mediosDePago={'PayPal'}
-                    />*/}
                 </tbody>
                 <tfoot>
                     <ColumnNameTable />

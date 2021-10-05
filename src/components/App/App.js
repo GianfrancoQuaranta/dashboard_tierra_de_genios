@@ -13,6 +13,7 @@ import TotalesBox from '../totalesBox/TotalesBox';
 import LastProductInDB from '../lastProductInDB/LastProductInDB';
 import ProductsInDB from '../productsInDB/ProductsInDB';
 import Table from '../table/Table';
+import Error from '../error/Error';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path='/lastProduct' component={LastProductInDB} />
         <Route path='/inDB' component={ProductsInDB} />
         <Route path='/usersTable' component={Table} />
+        <Route component={Error} />
       </Switch>
       <Footer />
     </div>
